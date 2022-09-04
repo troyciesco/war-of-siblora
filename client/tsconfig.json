@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "~/common/*": [
+        "src/common/*"
+      ],
+      "~/components/*": [
+        "src/components/*"
+      ],
+      "~/data/*": [
+        "data/*"
+      ],
+      "~/hooks/*": [
+        "src/hooks/*"
+      ],
+      "~/contexts/*": [
+        "src/contexts/*"
+      ],
+      "~/lib/*": [
+        "src/lib/*"
+      ],
+      "~/styles/*": [
+        "src/styles/*"
+      ],
+      "~/templates/*": [
+        "src/templates/*"
+      ],
+      "~/types/*": [
+        "src/types/*"
+      ],
+      "~/utils/*": [
+        "src/utils/*"
+      ],
+      "~/assets/*": [
+        "public/assets/*"
+      ],
+      "config": [
+        "src/config"
+      ]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}
