@@ -21,7 +21,7 @@ export const AuthContextProvider = (props: any) => {
   const checkNetwork = async () => {
     try {
       // @ts-ignore
-      if (window.ethereum.networkVersion !== "4") {
+      if (window.ethereum && window.ethereum.networkVersion !== "4") {
         alert("Please connect to Rinkeby!")
       }
     } catch (error) {
